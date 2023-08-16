@@ -1,26 +1,24 @@
-//Pedra, papel ou tesoura
-//Duas pessoas estão jogando pedra, papel ou tesoura. Você deve imprimir o nome da jogada vencedora, ou "empate", em caso de empate.
-
-//Capturar escolha do(a) primeiro(a) jogador(a)
-let jogadaA = prompt("Bem-vindo(a) ao jogo player 1! Escolha: papel, pedra ou tesoura?");
+//Rock, paper, scissors games
+//Capture first player's choice
+let jogadaA = prompt("Welcome player 2! Which is your choice: rock, paper or scissors?");
 jogadaA = jogadaA.toLowerCase(); //convert all to lowercase.
 
-//Capturar escolha do(a) segundo(a) jogador(a)
-let jogadaB = prompt("Bem-vindo(a) ao jogo player 2! Escolha: papel, pedra ou tesoura?");
+//Capture second player's choice
+let jogadaB = prompt("Welcome player 2! Which is your choice: rock, paper or scissors?");
 jogadaB = jogadaB.toLowerCase(); //convert all to lowercase.
 
-if (jogadaA == jogadaB) {
-	result = "empate";
+if (moveA == moveB) {
+	result = "Draw";
 } else if (
 	(
-		jogadaA == "tesoura" && jogadaB == "papel" ||
-		jogadaA == "pedra" && jogadaB == "tesoura" ||
-		jogadaA == "papel" && jogadaB == "pedra"
+		moveA == "scissors" && moveB == "paper" ||
+		moveA == "rock" && moveB == "scissors" ||
+		moveA == "paper" && moveB == "rock"
 	)
 ) {
-	result = "O ganhador é o jogador 1! Parabéns!"
+	result = "The winner is Player 1! Congratulations!"
 } else {
-	result = "O ganhador é o jogador 2! Parabéns!"
+	result = "The winner is Player 2! Congratulations!"
 }
 
 alert(result);
