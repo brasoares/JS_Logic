@@ -1,11 +1,11 @@
 //Rock, paper, scissors games
 //Capture first player's choice
-let jogadaA = prompt("Welcome player 2! Which is your choice: rock, paper or scissors?");
-jogadaA = jogadaA.toLowerCase(); //convert all to lowercase.
+let moveA = prompt("Welcome player 2! Which is your choice: rock, paper or scissors?");
+moveA = moveA.toLowerCase(); //convert all to lowercase.
 
 //Capture second player's choice
-let jogadaB = prompt("Welcome player 2! Which is your choice: rock, paper or scissors?");
-jogadaB = jogadaB.toLowerCase(); //convert all to lowercase.
+let moveB = prompt("Welcome player 2! Which is your choice: rock, paper or scissors?");
+moveB = moveB.toLowerCase(); //convert all to lowercase.
 
 if (moveA == moveB) {
 	result = "Draw";
